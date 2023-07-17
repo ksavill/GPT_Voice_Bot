@@ -44,11 +44,18 @@ def speak_text(text):
     engine.runAndWait()
 
 def main():
+    global conversation_history
     while True:
         user_input = input("You: ")
+        if user_input.lower() in ["new chat"]:
+            conversation_history = []
+            speak_text("Conversation Cleared")
+            print("Conversation history has been cleared.")
+            continue
         response = generate_response(user_input)
         print(f"GPT says: {response}")
         speak_text(response)
+
 
 if __name__ == "__main__":
     main()
