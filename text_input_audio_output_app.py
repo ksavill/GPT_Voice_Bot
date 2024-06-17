@@ -1,9 +1,10 @@
 import pyttsx3
 import requests
 import json
+import os
 
 # Initialize OpenAI API
-api_key = "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"
+api_key = os.environ.get("openai_token")
 selectedModel = "gpt-3.5-turbo"
 
 # Initialize the text to speech engine
