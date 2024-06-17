@@ -11,9 +11,10 @@ import re
 import speech_recognition
 import pyttsx3
 import datetime
+import os
 
 # Initialize OpenAI API
-api_key = "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"
+api_key = os.environ.get("openai_token")
 speaking = False
 
 callingName = "Vega"
