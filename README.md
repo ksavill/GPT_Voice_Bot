@@ -10,9 +10,10 @@ This repository contains two Python applications: app.py and text_input_audio_ou
   - pyaudio
   - requests
   - dearpygui
-  - speech_recognition
+  - speechrecognition
   - pyttsx3
   - datetime
+  - sounddevice
 
 **Installation**
 Clone the repository:
