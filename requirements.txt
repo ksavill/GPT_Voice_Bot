@@ -1,0 +1,6 @@
+pyttsx3
+requests
+dearpygui
+speechrecognition
+pyaudio
+sounddevice
